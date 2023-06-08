@@ -9,3 +9,13 @@
 //  const roundedResult = roundTo(1.123456789, 6);
 //  console.log(roundedResult); // 1.123457
 
+function roundedResult(num, numDecimales){
+    const factor = 10 ** numDecimales;
+    return Math.round(num * factor) / factor;
+}
+
+const numero = 6.365478;
+const numDecimales = 3;
+const roundedResult = roundedResult (numero, numDecimales);
+
+console.log(roundedResult);
